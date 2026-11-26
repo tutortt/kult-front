@@ -1,0 +1,71 @@
+/* ==========================================================================
+   KULT STUDIO · AJUSTES ESPECÍFICOS DEL REGISTRO
+   El maquetado base vive en App.css, HeaderLogin.css y login/auth.css.
+   ========================================================================== */
+
+.auth-page.registro-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:
+    radial-gradient(50% 30% at 0 10%, rgba(198, 245, 0, .07), transparent 70%),
+    radial-gradient(40% 30% at 100% 90%, rgba(198, 245, 0, .05), transparent 70%);
+}
+
+.reg-form fieldset {
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.reg-form legend.lbl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.reg-form legend.lbl span:last-child {
+  color: var(--lime);
+}
+
+.reg-form .check span {
+  font-family: var(--body);
+  font-size: .85rem;
+}
+
+.reg-form .check a {
+  text-decoration: underline;
+}
+
+.reg-form input[aria-invalid="true"],
+.reg-form select[aria-invalid="true"] {
+  border-color: #ff5a5a;
+  box-shadow: 0 0 0 1px #ff5a5a;
+}
+
+.reg-form .phone input {
+  border-left: 0;
+}
+
+.reg-form .msg.err {
+  display: block;
+}
+
+.reg-form .login-link {
+  background: var(--field);
+  padding: 16px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.reg-form .login-link a {
+  color: var(--lime);
+  font-weight: 700;
+}
+
+.reg-grid .quota .row b {
+  white-space: nowrap;
+}

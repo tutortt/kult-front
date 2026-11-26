@@ -1,0 +1,71 @@
+/* ==========================================================================
+   KULT STUDIO · COMPONENTES COMPARTIDOS (home, login, admin)
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 24px;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 0;
+  transition: filter 0.15s, background 0.15s, transform 0.1s;
+}
+
+.btn.lime {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+.btn.lime:hover {
+  filter: brightness(1.08);
+}
+
+.btn.dark {
+  background: var(--field);
+  color: var(--text);
+}
+
+.btn.dark:hover {
+  background: #34363b;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--field);
+  color: var(--lime);
+  padding: 5px 10px;
+}
+
+.tag::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--lime);
+  margin-right: 8px;
+}
+
+.eyebrow {
+  color: var(--lime);
+  margin-bottom: 12px;
+}
+
+.proto {
+  margin-bottom: 12px;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.proto b {
+  color: var(--lime);
+}
